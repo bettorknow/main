@@ -1,0 +1,12 @@
+C:\CoreProjects\Bettorknow\PremierStatistics\PremierStatisticsDal\bin\Debug\PremierStatisticsDal.dll.config
+C:\CoreProjects\Bettorknow\PremierStatistics\PremierStatisticsDal\bin\Debug\PremierStatisticsDal.dll
+C:\CoreProjects\Bettorknow\PremierStatistics\PremierStatisticsDal\bin\Debug\PremierStatisticsDal.pdb
+C:\CoreProjects\Bettorknow\PremierStatistics\PremierStatisticsDal\bin\Debug\EntityFramework.dll
+C:\CoreProjects\Bettorknow\PremierStatistics\PremierStatisticsDal\bin\Debug\EntityFramework.xml
+C:\CoreProjects\Bettorknow\PremierStatistics\PremierStatisticsDal\obj\Debug\PremierStatisticsDal.csprojResolveAssemblyReference.cache
+C:\CoreProjects\Bettorknow\PremierStatistics\PremierStatisticsDal\obj\Debug\PremierStatisticsDal.dll
+C:\CoreProjects\Bettorknow\PremierStatistics\PremierStatisticsDal\obj\Debug\PremierStatisticsDal.pdb
+C:\CoreProjects\Bettorknow\PremierStatistics\PremierStatisticsDal\bin\Debug\Microsoft.Practices.Unity.dll
+C:\CoreProjects\Bettorknow\PremierStatistics\PremierStatisticsDal\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\CoreProjects\Bettorknow\PremierStatistics\PremierStatisticsDal\bin\Debug\Microsoft.Practices.Unity.xml
+C:\CoreProjects\Bettorknow\PremierStatistics\PremierStatisticsDal\bin\Debug\Microsoft.Practices.ServiceLocation.xml

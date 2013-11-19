@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FootballStatsModelStoreContainer" CdmEntityContainer="FootballStatsEntities">
+    <EntitySetMapping Name="Fixture">
+      <EntityTypeMapping TypeName="FootballStatsModel.Fixture1">
+        <MappingFragment StoreEntitySet="Fixtures">
+          <ScalarProperty Name="AwayTeam" ColumnName="AwayTeam" />
+          <ScalarProperty Name="HomeTeam" ColumnName="HomeTeam" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Div" ColumnName="Div" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

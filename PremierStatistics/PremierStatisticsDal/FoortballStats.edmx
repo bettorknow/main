@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="FootballStatsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="FootballStatsModelStoreContainer">
+          <EntitySet Name="Fixtures" EntityType="FootballStatsModel.Store.Fixtures" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Fixtures">
+          <Key>
+            <PropertyRef Name="Date" />
+            <PropertyRef Name="HomeTeam" />
+            <PropertyRef Name="AwayTeam" />
+          </Key>
+          <Property Name="Div" Type="varchar" MaxLength="50" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="HomeTeam" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="AwayTeam" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FootballStatsModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="FootballStatsEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Fixtures" EntityType="FootballStatsModel.Fixture" />
+        </EntityContainer>
+        <EntityType Name="Fixture">
+          <Key>
+            <PropertyRef Name="Date" />
+            <PropertyRef Name="HomeTeam" />
+            <PropertyRef Name="AwayTeam" />
+          </Key>
+          <Property Name="Div" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="HomeTeam" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="AwayTeam" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FootballStatsModelStoreContainer" CdmEntityContainer="FootballStatsEntities">
+          <EntitySetMapping Name="Fixtures">
+            <EntityTypeMapping TypeName="FootballStatsModel.Fixture">
+              <MappingFragment StoreEntitySet="Fixtures">
+                <ScalarProperty Name="Div" ColumnName="Div" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="HomeTeam" ColumnName="HomeTeam" />
+                <ScalarProperty Name="AwayTeam" ColumnName="AwayTeam" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
