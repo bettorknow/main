@@ -1,8 +1,0 @@
-<Modules>
-  <Module PersistentId="CAEA5B68-4E13-43B3-802E-634B05F982DA" ModuleId="PremierStatistics" />
-  <Module PersistentId="EF8B2C50-88C8-418F-B54C-4F9DB45013A8" ModuleId="PremierStatisticsLib" />
-  <Module PersistentId="11DBEB1A-F140-40F7-8CA8-8CD6B4FDF8B5" ModuleId="PremierStatisticsDal" />
-  <Module PersistentId="A9AE39CC-36E8-4148-8759-8C39D3027059" ModuleId="PremierStatisticsDal.Tests" />
-  <Module PersistentId="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="EntityFramework" />
-  <Module PersistentId="529F364A-0199-4CD8-BBC2-AB87AF6A6C7F" ModuleId="PremierStatistics.Tests" />
-</Modules>
