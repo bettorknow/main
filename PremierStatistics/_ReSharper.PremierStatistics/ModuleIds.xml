@@ -5,4 +5,5 @@
   <Module PersistentId="A9AE39CC-36E8-4148-8759-8C39D3027059" ModuleId="PremierStatisticsDal.Tests" />
   <Module PersistentId="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="EntityFramework" />
   <Module PersistentId="529F364A-0199-4CD8-BBC2-AB87AF6A6C7F" ModuleId="PremierStatistics.Tests" />
+  <Module PersistentId="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77" ModuleId="nunit.framework" />
 </Modules>

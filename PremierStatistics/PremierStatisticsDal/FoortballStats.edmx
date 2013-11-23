@@ -29,12 +29,12 @@
         </EntityContainer>
         <EntityType Name="Fixture">
           <Key>
-            <PropertyRef Name="Date" />
+            <PropertyRef Name="MatchDate" />
             <PropertyRef Name="HomeTeam" />
             <PropertyRef Name="AwayTeam" />
           </Key>
           <Property Name="Div" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
-          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="MatchDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="HomeTeam" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
           <Property Name="AwayTeam" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
         </EntityType>
@@ -48,7 +48,7 @@
             <EntityTypeMapping TypeName="FootballStatsModel.Fixture">
               <MappingFragment StoreEntitySet="Fixtures">
                 <ScalarProperty Name="Div" ColumnName="Div" />
-                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="MatchDate" ColumnName="Date" />
                 <ScalarProperty Name="HomeTeam" ColumnName="HomeTeam" />
                 <ScalarProperty Name="AwayTeam" ColumnName="AwayTeam" />
               </MappingFragment>

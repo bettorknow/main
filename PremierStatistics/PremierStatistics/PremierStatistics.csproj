@@ -79,6 +79,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DependencyFactory.cs" />
+    <Compile Include="Maps\FixtureToAwayDtoMap.cs" />
+    <Compile Include="Maps\FixtureToHomeDtoMap.cs" />
     <Compile Include="PremierStatistics.svc.cs">
       <DependentUpon>PremierStatistics.svc</DependentUpon>
     </Compile>

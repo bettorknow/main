@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PremierStatisticsDal.Tests"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PremierStatistics.Tests", "PremierStatistics.Tests\PremierStatistics.Tests.csproj", "{529F364A-0199-4CD8-BBC2-AB87AF6A6C7F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Layer", "Business Layer", "{77FD0176-23C6-4BF1-8B99-3E2FD93E6785}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation Layer", "Presentation Layer", "{56A42E0B-0D21-403E-97EC-1801148C7D5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,5 +44,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF8B2C50-88C8-418F-B54C-4F9DB45013A8} = {77FD0176-23C6-4BF1-8B99-3E2FD93E6785}
+		{A9AE39CC-36E8-4148-8759-8C39D3027059} = {77FD0176-23C6-4BF1-8B99-3E2FD93E6785}
+		{11DBEB1A-F140-40F7-8CA8-8CD6B4FDF8B5} = {77FD0176-23C6-4BF1-8B99-3E2FD93E6785}
+		{529F364A-0199-4CD8-BBC2-AB87AF6A6C7F} = {77FD0176-23C6-4BF1-8B99-3E2FD93E6785}
+		{CAEA5B68-4E13-43B3-802E-634B05F982DA} = {77FD0176-23C6-4BF1-8B99-3E2FD93E6785}
 	EndGlobalSection
 EndGlobal

@@ -15,7 +15,7 @@ namespace PremierStatisticsDal
     public partial class Fixture
     {
         public string Div { get; set; }
-        public System.DateTime Date { get; set; }
+        public System.DateTime MatchDate { get; set; }
         public string HomeTeam { get; set; }
         public string AwayTeam { get; set; }
     }

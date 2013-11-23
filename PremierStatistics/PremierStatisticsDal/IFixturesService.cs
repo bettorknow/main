@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PremierStatisticsLib;
+using PremierStatisticsLib.Interfaces;
 
 namespace PremierStatisticsDal
 {
@@ -11,9 +12,9 @@ namespace PremierStatisticsDal
     {
         IEnumerable<Fixture> Fixtures();
         IEnumerable<Fixture> FixturesByDate(IDateRange dateRange);
-        IEnumerable<Fixture> FixturesByTeam(string team);
-        IEnumerable<Fixture> FixturesByDateTeam(IDateRange dateRange, string team);
-        IEnumerable<Fixture> FixturesForTeamCurrentWeek(string team);
+        IEnumerable<Fixture> FixturesByTeam(ITeam team);
+        IEnumerable<Fixture> FixturesByDateTeam(IDateRange dateRange, ITeam team);
+        IEnumerable<Fixture> FixturesForTeamCurrentWeek(ITeam team);
         IEnumerable<Fixture> FixturesForCurrentWeek();
         GameWeek GetCurrentGameWeek();
     }

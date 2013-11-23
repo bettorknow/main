@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Practices.Unity;
-using PremierStatisticsLib;
+using PremierStatisticsLib.Interfaces;
 
 namespace PremierStatisticsDal
 {
@@ -32,29 +32,29 @@ namespace PremierStatisticsDal
 
         public IEnumerable<Fixture> FixturesByDate(IDateRange dateRange)
         {
-            return Fixtures().Where(dateFixture => dateFixture.Date >= dateRange.From && dateFixture.Date <= dateRange.To);
+            return Fixtures().Where(dateFixture => dateFixture.MatchDate >= dateRange.From && dateFixture.MatchDate <= dateRange.To);
         }
 
-        public IEnumerable<Fixture> FixturesByTeam(string team)
+        public IEnumerable<Fixture> FixturesByTeam(ITeam team)
         {
-            return Fixtures().Where(teamName => teamName.HomeTeam == team || teamName.AwayTeam == team);
+            return Fixtures().Where(teamName => teamName.HomeTeam == team.Name || teamName.AwayTeam == team.Name);
         }
 
-        public IEnumerable<Fixture> FixturesByDateTeam(IDateRange dateRange, string team)
+        public IEnumerable<Fixture> FixturesByDateTeam(IDateRange dateRange, ITeam team)
         {
-            return Fixtures().Where(dateFixture => dateFixture.Date >= dateRange.From && dateFixture.Date <= dateRange.To)
-                                     .Where(teamName => teamName.HomeTeam == team || teamName.AwayTeam == team);
+            return Fixtures().Where(dateFixture => dateFixture.MatchDate >= dateRange.From && dateFixture.MatchDate <= dateRange.To)
+                                     .Where(teamName => teamName.HomeTeam == team.Name || teamName.AwayTeam == team.Name);
         }
 
-        public IEnumerable<Fixture> FixturesForTeamCurrentWeek(string team)
+        public IEnumerable<Fixture> FixturesForTeamCurrentWeek(ITeam team)
         {
-            return Fixtures().Where(dateFixture => dateFixture.Date >= _gameweek.WeekFrom && dateFixture.Date <= _gameweek.WeekTo)
-                                     .Where(teamName => teamName.HomeTeam == team || teamName.AwayTeam == team);
+            return Fixtures().Where(dateFixture => dateFixture.MatchDate >= _gameweek.WeekFrom && dateFixture.MatchDate <= _gameweek.WeekTo)
+                                     .Where(teamName => teamName.HomeTeam == team.Name || teamName.AwayTeam == team.Name);
         }
 
         public IEnumerable<Fixture> FixturesForCurrentWeek()
         {
-            return Fixtures().Where(dateFixture => dateFixture.Date >= _gameweek.WeekFrom && dateFixture.Date <= _gameweek.WeekTo);
+            return Fixtures().Where(dateFixture => dateFixture.MatchDate >= _gameweek.WeekFrom && dateFixture.MatchDate <= _gameweek.WeekTo);
         }
 
         public GameWeek GetCurrentGameWeek()
