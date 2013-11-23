@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PremierStatistics" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:1440/PremierStatistics.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:1440/PremierStatistics.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:1440/PremierStatistics.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PremierStatisticsLib.Dto" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPremierStatistics_Fixtures_InputMessage">
+    <wsdl:part name="parameters" element="tns:Fixtures" />
+  </wsdl:message>
+  <wsdl:message name="IPremierStatistics_Fixtures_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FixturesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPremierStatistics_FixturesByDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:FixturesByDate" />
+  </wsdl:message>
+  <wsdl:message name="IPremierStatistics_FixturesByDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FixturesByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPremierStatistics_FixturesByTeam_InputMessage">
+    <wsdl:part name="parameters" element="tns:FixturesByTeam" />
+  </wsdl:message>
+  <wsdl:message name="IPremierStatistics_FixturesByTeam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FixturesByTeamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPremierStatistics_FixturesByDateTeam_InputMessage">
+    <wsdl:part name="parameters" element="tns:FixturesByDateTeam" />
+  </wsdl:message>
+  <wsdl:message name="IPremierStatistics_FixturesByDateTeam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FixturesByDateTeamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPremierStatistics_FixturesForTeamCurrentWeek_InputMessage">
+    <wsdl:part name="parameters" element="tns:FixturesForTeamCurrentWeek" />
+  </wsdl:message>
+  <wsdl:message name="IPremierStatistics_FixturesForTeamCurrentWeek_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FixturesForTeamCurrentWeekResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPremierStatistics_FixturesForCurrentWeek_InputMessage">
+    <wsdl:part name="parameters" element="tns:FixturesForCurrentWeek" />
+  </wsdl:message>
+  <wsdl:message name="IPremierStatistics_FixturesForCurrentWeek_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FixturesForCurrentWeekResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPremierStatistics">
+    <wsdl:operation name="Fixtures">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPremierStatistics/Fixtures" message="tns:IPremierStatistics_Fixtures_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPremierStatistics/FixturesResponse" message="tns:IPremierStatistics_Fixtures_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FixturesByDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPremierStatistics/FixturesByDate" message="tns:IPremierStatistics_FixturesByDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPremierStatistics/FixturesByDateResponse" message="tns:IPremierStatistics_FixturesByDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FixturesByTeam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPremierStatistics/FixturesByTeam" message="tns:IPremierStatistics_FixturesByTeam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPremierStatistics/FixturesByTeamResponse" message="tns:IPremierStatistics_FixturesByTeam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FixturesByDateTeam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPremierStatistics/FixturesByDateTeam" message="tns:IPremierStatistics_FixturesByDateTeam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPremierStatistics/FixturesByDateTeamResponse" message="tns:IPremierStatistics_FixturesByDateTeam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FixturesForTeamCurrentWeek">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPremierStatistics/FixturesForTeamCurrentWeek" message="tns:IPremierStatistics_FixturesForTeamCurrentWeek_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPremierStatistics/FixturesForTeamCurrentWeekResponse" message="tns:IPremierStatistics_FixturesForTeamCurrentWeek_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FixturesForCurrentWeek">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPremierStatistics/FixturesForCurrentWeek" message="tns:IPremierStatistics_FixturesForCurrentWeek_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPremierStatistics/FixturesForCurrentWeekResponse" message="tns:IPremierStatistics_FixturesForCurrentWeek_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPremierStatistics" type="tns:IPremierStatistics">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Fixtures">
+      <soap:operation soapAction="http://tempuri.org/IPremierStatistics/Fixtures" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FixturesByDate">
+      <soap:operation soapAction="http://tempuri.org/IPremierStatistics/FixturesByDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FixturesByTeam">
+      <soap:operation soapAction="http://tempuri.org/IPremierStatistics/FixturesByTeam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FixturesByDateTeam">
+      <soap:operation soapAction="http://tempuri.org/IPremierStatistics/FixturesByDateTeam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FixturesForTeamCurrentWeek">
+      <soap:operation soapAction="http://tempuri.org/IPremierStatistics/FixturesForTeamCurrentWeek" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FixturesForCurrentWeek">
+      <soap:operation soapAction="http://tempuri.org/IPremierStatistics/FixturesForCurrentWeek" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PremierStatistics">
+    <wsdl:port name="BasicHttpBinding_IPremierStatistics" binding="tns:BasicHttpBinding_IPremierStatistics">
+      <soap:address location="http://localhost:1440/PremierStatistics.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

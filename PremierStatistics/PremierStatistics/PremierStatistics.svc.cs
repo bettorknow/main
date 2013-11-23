@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
 using Omu.ValueInjecter;
@@ -27,7 +28,7 @@ namespace PremierStatistics
 
         public List<FixtureDto> Fixtures()
         {
-            return _fixturesService.Fixtures().Select(ConvertToDto).ToList(); 
+            return _fixturesService.Fixtures().Select(ConvertToDto).ToList();
         }
 
         public List<FixtureDto> FixturesByDate(IDateRange dateRange)

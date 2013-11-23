@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ca5fffe2-7b2a-41c6-a235-be0fac0ef3a5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1440/PremierStatistics.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PremierStatistics.disco" MetadataType="Disco" ID="3c67d9c3-4ba5-4ffa-b966-2c3926d6e5f3" SourceId="1" SourceUrl="http://localhost:1440/PremierStatistics.svc?disco" />
+    <MetadataFile FileName="PremierStatistics.xsd" MetadataType="Schema" ID="b7892835-311c-4479-bbd5-6b0b7caefe80" SourceId="1" SourceUrl="http://localhost:1440/PremierStatistics.svc?xsd=xsd2" />
+    <MetadataFile FileName="PremierStatistics1.xsd" MetadataType="Schema" ID="d0f1973b-dde6-4e69-866f-ced87fa2510a" SourceId="1" SourceUrl="http://localhost:1440/PremierStatistics.svc?xsd=xsd0" />
+    <MetadataFile FileName="PremierStatistics.wsdl" MetadataType="Wsdl" ID="e6edd924-b162-4474-957e-69c17c4c8f8c" SourceId="1" SourceUrl="http://localhost:1440/PremierStatistics.svc?wsdl" />
+    <MetadataFile FileName="PremierStatistics2.xsd" MetadataType="Schema" ID="770b8f30-2606-4ca6-8132-f738f6d1d724" SourceId="1" SourceUrl="http://localhost:1440/PremierStatistics.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
