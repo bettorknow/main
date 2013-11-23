@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Moq;
 using NUnit.Framework;
+using PremierStatisticsLib;
 
 namespace PremierStatisticsDal.Tests
 {
@@ -66,9 +67,19 @@ namespace PremierStatisticsDal.Tests
         public void AreAllFixturesByDateReturned()
         {
             var fs = GetConfiguredFixtureService();
-            var fixtureList = fs.FixturesByDate(new DateTime(2013, 1, 1), new DateTime(2013, 2, 1));
+            var range = new Mock<IDateRange>();
+
+            range.SetupGet(x => x.From).Returns(new DateTime(2013, 1, 1));
+            range.SetupGet(x => x.To).Returns(new DateTime(2013, 2, 1));
+
+            var fixtureList = fs.FixturesByDate(range.Object);
 
             Assert.That(fixtureList.Count(), Is.EqualTo(4));
+
+            range.VerifyGet(x => x.From);
+            range.VerifyGet(x => x.To);
+
+            range.Verify();
         }
 
         [Test]
@@ -84,7 +95,11 @@ namespace PremierStatisticsDal.Tests
         public void AreAllFixturesByDateTeamReturned()
         {
             var fs = GetConfiguredFixtureService();
-            var fixtureList = fs.FixturesByDateTeam(new DateTime(2013, 1, 1), new DateTime(2013, 2, 1), "Man Utd");
+            var range = new Mock<IDateRange>();
+
+            range.SetupGet(x => x.From).Returns(new DateTime(2013, 1, 1));
+            range.SetupGet(x => x.To).Returns(new DateTime(2013, 2, 1));
+            var fixtureList = fs.FixturesByDateTeam(range.Object, "Man Utd");
 
             Assert.That(fixtureList.Count(), Is.EqualTo(3));
         }

@@ -62,6 +62,10 @@
       <Project>{11DBEB1A-F140-40F7-8CA8-8CD6B4FDF8B5}</Project>
       <Name>PremierStatisticsDal</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PremierStatisticsLib\PremierStatisticsLib.csproj">
+      <Project>{EF8B2C50-88C8-418F-B54C-4F9DB45013A8}</Project>
+      <Name>PremierStatisticsLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Practices.Unity;
+using PremierStatisticsLib;
 
 namespace PremierStatisticsDal
 {
@@ -29,9 +30,9 @@ namespace PremierStatisticsDal
             return _fixtures.Fixtures;
         }
 
-        public IEnumerable<Fixture> FixturesByDate(DateTime from, DateTime to)
+        public IEnumerable<Fixture> FixturesByDate(IDateRange dateRange)
         {
-            return Fixtures().Where(dateFixture => dateFixture.Date >= from && dateFixture.Date <= to);
+            return Fixtures().Where(dateFixture => dateFixture.Date >= dateRange.From && dateFixture.Date <= dateRange.To);
         }
 
         public IEnumerable<Fixture> FixturesByTeam(string team)
@@ -39,9 +40,9 @@ namespace PremierStatisticsDal
             return Fixtures().Where(teamName => teamName.HomeTeam == team || teamName.AwayTeam == team);
         }
 
-        public IEnumerable<Fixture> FixturesByDateTeam(DateTime from, DateTime to, string team)
+        public IEnumerable<Fixture> FixturesByDateTeam(IDateRange dateRange, string team)
         {
-            return Fixtures().Where(dateFixture => dateFixture.Date >= from && dateFixture.Date <= to)
+            return Fixtures().Where(dateFixture => dateFixture.Date >= dateRange.From && dateFixture.Date <= dateRange.To)
                                      .Where(teamName => teamName.HomeTeam == team || teamName.AwayTeam == team);
         }
 

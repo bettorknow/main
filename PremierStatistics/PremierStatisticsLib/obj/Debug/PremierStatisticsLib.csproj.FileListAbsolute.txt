@@ -2,3 +2,8 @@ C:\CoreProjects\Bettorknow\PremierStatistics\PremierStatisticsLib\bin\Debug\Prem
 C:\CoreProjects\Bettorknow\PremierStatistics\PremierStatisticsLib\bin\Debug\PremierStatisticsLib.pdb
 C:\CoreProjects\Bettorknow\PremierStatistics\PremierStatisticsLib\obj\Debug\PremierStatisticsLib.dll
 C:\CoreProjects\Bettorknow\PremierStatistics\PremierStatisticsLib\obj\Debug\PremierStatisticsLib.pdb
+C:\bettorknow\PremierStatistics\PremierStatisticsLib\bin\Debug\PremierStatisticsLib.dll
+C:\bettorknow\PremierStatistics\PremierStatisticsLib\bin\Debug\PremierStatisticsLib.pdb
+C:\bettorknow\PremierStatistics\PremierStatisticsLib\obj\Debug\PremierStatisticsLib.dll
+C:\bettorknow\PremierStatistics\PremierStatisticsLib\obj\Debug\PremierStatisticsLib.pdb
+C:\bettorknow\PremierStatistics\PremierStatisticsLib\obj\Debug\PremierStatisticsLib.csprojResolveAssemblyReference.cache

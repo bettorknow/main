@@ -14,11 +14,11 @@ namespace PremierStatisticsLib
         [OperationContract]
         List<FixtureDto> Fixtures();
         [OperationContract]
-        List<FixtureDto> FixturesByDate(DateTime from, DateTime to);
+        List<FixtureDto> FixturesByDate(IDateRange dateRange);
         [OperationContract]
         List<FixtureDto> FixturesByTeam(TeamDto team);
         [OperationContract]
-        List<FixtureDto> FixturesByDateTeam(DateTime from, DateTime to, TeamDto team);
+        List<FixtureDto> FixturesByDateTeam(IDateRange dateRange, TeamDto team);
         [OperationContract]
         List<FixtureDto> FixturesForTeamCurrentWeek(TeamDto team);
         [OperationContract]

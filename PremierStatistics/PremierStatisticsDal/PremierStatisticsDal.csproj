@@ -99,6 +99,12 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PremierStatisticsLib\PremierStatisticsLib.csproj">
+      <Project>{EF8B2C50-88C8-418F-B54C-4F9DB45013A8}</Project>
+      <Name>PremierStatisticsLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

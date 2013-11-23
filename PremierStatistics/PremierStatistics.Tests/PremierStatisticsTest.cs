@@ -28,24 +28,29 @@ namespace PremierStatistics.Tests
             var fixturesService = new Mock<IFixturesService>();
             var ps = new PremierStatistics(fixturesService.Object);
 
-            //fixturesService.Setup(x => x.Fixtures()).Returns(GetFixtures());
+            fixturesService.Setup(x => x.Fixtures()).Returns(GetFixtures());
 
-            //var fixtures = ps.Fixtures();
-            //Assert.That(fixtures.Count(), Is.EqualTo(2));
+            var fixtures = ps.Fixtures();
+            Assert.That(fixtures.Count(), Is.EqualTo(2));
         }
 
-        /*[Test]
+        [Test]
         public void FixturesByDateReturnsExpectedList()
         {
             var fixturesService = new Mock<IFixturesService>();
             var ps = new PremierStatistics(fixturesService.Object);
 
+            var range = new Mock<IDateRange>();
+
             var dateFrom = new DateTime(2013, 1, 1);
             var dateTo = new DateTime(2013, 1, 2);
 
-            fixturesService.Setup(x => x.FixturesByDate(dateFrom, dateTo)).Returns(GetFixtures());
+            range.SetupGet(x => x.From).Returns(dateFrom);
+            range.SetupGet(x => x.To).Returns(dateTo);
 
-            var fixtures = ps.FixturesByDate(dateFrom, dateTo);
+            fixturesService.Setup(x => x.FixturesByDate(range.Object)).Returns(GetFixtures().Where(dateFixture => dateFixture.Date >= dateFrom && dateFixture.Date <= dateTo));
+
+            var fixtures = ps.FixturesByDate(range.Object);
             Assert.That(fixtures.Count(), Is.EqualTo(1));
         }
 
@@ -55,7 +60,7 @@ namespace PremierStatistics.Tests
             var fixture2 = new Fixture { AwayTeam = "Man Utd", Date = new DateTime(2013, 1, 20), Div = "E01", HomeTeam = "Chelsea" };
             var fixtures = new List<Fixture> { fixture1, fixture2 };
             return fixtures;
-        }*/
+        }
 
     }
 }

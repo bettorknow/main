@@ -29,9 +29,9 @@ namespace PremierStatistics
             return _fixturesService.Fixtures().Select(ConvertToDto).ToList(); 
         }
 
-        public List<FixtureDto> FixturesByDate(DateTime from, DateTime to)
+        public List<FixtureDto> FixturesByDate(IDateRange dateRange)
         {
-            return _fixturesService.FixturesByDate(from, to).Select(ConvertToDto).ToList();
+            return _fixturesService.FixturesByDate(dateRange).Select(ConvertToDto).ToList();
         }
 
         public List<FixtureDto> FixturesByTeam(TeamDto team)
@@ -39,9 +39,9 @@ namespace PremierStatistics
             return _fixturesService.FixturesByTeam(team.Name).Select(ConvertToDto).ToList();
         }
 
-        public List<FixtureDto> FixturesByDateTeam(DateTime from, DateTime to, TeamDto team)
+        public List<FixtureDto> FixturesByDateTeam(IDateRange dateRange, TeamDto team)
         {
-            return _fixturesService.FixturesByDateTeam(from, to, team.Name).Select(ConvertToDto).ToList(); 
+            return _fixturesService.FixturesByDateTeam(dateRange, team.Name).Select(ConvertToDto).ToList(); 
         }
 
         public List<FixtureDto> FixturesForTeamCurrentWeek(TeamDto team)
