@@ -15,9 +15,17 @@ namespace BettorKnow.Controllers
 
         public ActionResult Index()
         {
-            PremierStatisticsClient service = new PremierStatisticsClient();
-            var stats = service.Fixtures();
-            var model = new FixtureCountModel() { TotalFixtures = stats.Count() };
+            var model = new FixtureCountModel() { TotalFixtures = 0 };
+            try
+            {
+                PremierStatisticsClient service = new PremierStatisticsClient();
+                var stats = service.Fixtures();
+                model.TotalFixtures = stats.Count();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
             return View(model);
         }
 
