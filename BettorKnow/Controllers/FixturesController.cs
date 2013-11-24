@@ -24,7 +24,7 @@ namespace BettorKnow.Controllers
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
+                model.Error = e.Message;
             }
             return View(model);
         }

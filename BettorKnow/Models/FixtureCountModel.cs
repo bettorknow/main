@@ -8,5 +8,6 @@ namespace BettorKnow.Models
     public class FixtureCountModel
     {
         public int TotalFixtures { get; set; }
+        public string Error { get; set; }
     }
 }
