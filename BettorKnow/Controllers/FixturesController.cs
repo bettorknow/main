@@ -15,7 +15,8 @@ namespace BettorKnow.Controllers
 
         public ActionResult Index()
         {
-            var model = new FixtureCountModel() { TotalFixtures = 0, Error =  "" };
+            System.Net.ServicePointManager.ServerCertificateValidationCallback += (se, cert, chain, sslerror) => true;
+            var model = new FixtureCountModel { TotalFixtures = 0, Error =  "" };
             try
             {
                 PremierStatisticsClient service = new PremierStatisticsClient();

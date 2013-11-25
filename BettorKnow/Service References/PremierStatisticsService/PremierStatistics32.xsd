@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://localhost:444/PremierStatistics/PremierStatistics.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PremierStatisticsLib.Dto" />
+  <xs:element name="Fixtures">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FixturesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/PremierStatisticsLib.Dto" minOccurs="0" name="FixturesResult" nillable="true" type="q1:ArrayOfFixtureDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FixturesByDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dateRange" nillable="true" type="xs:anyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FixturesByDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/PremierStatisticsLib.Dto" minOccurs="0" name="FixturesByDateResult" nillable="true" type="q2:ArrayOfFixtureDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FixturesByTeam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="team" nillable="true" type="xs:anyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FixturesByTeamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/PremierStatisticsLib.Dto" minOccurs="0" name="FixturesByTeamResult" nillable="true" type="q3:ArrayOfFixtureDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FixturesByDateTeam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dateRange" nillable="true" type="xs:anyType" />
+        <xs:element minOccurs="0" name="team" nillable="true" type="xs:anyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FixturesByDateTeamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/PremierStatisticsLib.Dto" minOccurs="0" name="FixturesByDateTeamResult" nillable="true" type="q4:ArrayOfFixtureDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FixturesForTeamCurrentWeek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="team" nillable="true" type="xs:anyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FixturesForTeamCurrentWeekResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/PremierStatisticsLib.Dto" minOccurs="0" name="FixturesForTeamCurrentWeekResult" nillable="true" type="q5:ArrayOfFixtureDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FixturesForCurrentWeek">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FixturesForCurrentWeekResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/PremierStatisticsLib.Dto" minOccurs="0" name="FixturesForCurrentWeekResult" nillable="true" type="q6:ArrayOfFixtureDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

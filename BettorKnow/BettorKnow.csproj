@@ -212,13 +212,23 @@
     <Content Include="Service References\PremierStatisticsService\BettorKnow.PremierStatisticsService.FixtureDto.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Service References\PremierStatisticsService\PremierStatistics.disco" />
-    <Content Include="Service References\PremierStatisticsService\configuration91.svcinfo" />
-    <Content Include="Service References\PremierStatisticsService\configuration.svcinfo" />
-    <Content Include="Service References\PremierStatisticsService\Reference.svcmap">
+    <None Include="Service References\PremierStatisticsService\configuration91.svcinfo" />
+    <None Include="Service References\PremierStatisticsService\configuration.svcinfo" />
+    <Content Include="Service References\PremierStatisticsService\PremierStatistics1.wsdl" />
+    <None Include="Service References\PremierStatisticsService\PremierStatistics3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PremierStatisticsService\PremierStatistics31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PremierStatisticsService\PremierStatistics32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PremierStatisticsService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
-    </Content>
+    </None>
+    <Content Include="Service References\PremierStatisticsService\PremierStatistics1.disco" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -230,16 +240,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Service References\PremierStatisticsService\PremierStatistics.wsdl" />
-    <None Include="Service References\PremierStatisticsService\PremierStatistics.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\PremierStatisticsService\PremierStatistics1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\PremierStatisticsService\PremierStatistics2.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <Content Include="Views\Fixtures\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>

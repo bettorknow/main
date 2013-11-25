@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:1440/PremierStatistics.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://localhost:444/PremierStatistics/PremierStatistics.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="PremierStatistics.disco" MetadataType="Disco" ID="3c67d9c3-4ba5-4ffa-b966-2c3926d6e5f3" SourceId="1" SourceUrl="http://localhost:1440/PremierStatistics.svc?disco" />
-    <MetadataFile FileName="PremierStatistics.xsd" MetadataType="Schema" ID="b7892835-311c-4479-bbd5-6b0b7caefe80" SourceId="1" SourceUrl="http://localhost:1440/PremierStatistics.svc?xsd=xsd2" />
-    <MetadataFile FileName="PremierStatistics1.xsd" MetadataType="Schema" ID="d0f1973b-dde6-4e69-866f-ced87fa2510a" SourceId="1" SourceUrl="http://localhost:1440/PremierStatistics.svc?xsd=xsd0" />
-    <MetadataFile FileName="PremierStatistics.wsdl" MetadataType="Wsdl" ID="e6edd924-b162-4474-957e-69c17c4c8f8c" SourceId="1" SourceUrl="http://localhost:1440/PremierStatistics.svc?wsdl" />
-    <MetadataFile FileName="PremierStatistics2.xsd" MetadataType="Schema" ID="770b8f30-2606-4ca6-8132-f738f6d1d724" SourceId="1" SourceUrl="http://localhost:1440/PremierStatistics.svc?xsd=xsd1" />
+    <MetadataFile FileName="PremierStatistics3.xsd" MetadataType="Schema" ID="9ff0c679-b26f-4fb2-8949-b66f50bb54fc" SourceId="1" SourceUrl="https://localhost:444/PremierStatistics/PremierStatistics.svc?xsd=xsd2" />
+    <MetadataFile FileName="PremierStatistics31.xsd" MetadataType="Schema" ID="2723bfb4-931e-4488-a1ed-1f0095be36c0" SourceId="1" SourceUrl="https://localhost:444/PremierStatistics/PremierStatistics.svc?xsd=xsd1" />
+    <MetadataFile FileName="PremierStatistics32.xsd" MetadataType="Schema" ID="b5055dbd-0a6d-44e1-b9c6-4088003b8f51" SourceId="1" SourceUrl="https://localhost:444/PremierStatistics/PremierStatistics.svc?xsd=xsd0" />
+    <MetadataFile FileName="PremierStatistics1.wsdl" MetadataType="Wsdl" ID="b6dbe228-4222-4948-9b4f-a93ef0e0937a" SourceId="1" SourceUrl="https://localhost:444/PremierStatistics/PremierStatistics.svc?wsdl" />
+    <MetadataFile FileName="PremierStatistics1.disco" MetadataType="Disco" ID="a151b8a9-ba4c-465d-b830-ef29682641a5" SourceId="1" SourceUrl="https://localhost:444/PremierStatistics/PremierStatistics.svc?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
