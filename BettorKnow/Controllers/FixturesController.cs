@@ -1,32 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
 using System.Web;
 using System.Web.Mvc;
 using BettorKnow.Models;
 using BettorKnow.PremierStatisticsService;
+using BettorKnow.Services;
 
 namespace BettorKnow.Controllers
 {
     public class FixturesController : Controller
     {
-        //
-        // GET: /Fixtures/
+        private readonly IFixtureService _fixtureService;
+
+        public FixturesController(IFixtureService fixtureService)
+        {
+            _fixtureService = fixtureService;
+        }
 
         public ActionResult Index()
         {
-            System.Net.ServicePointManager.ServerCertificateValidationCallback += (se, cert, chain, sslerror) => true;
-            var model = new FixtureCountModel { TotalFixtures = 0, Error =  "" };
-            try
-            {
-                PremierStatisticsClient service = new PremierStatisticsClient();
-                var stats = service.Fixtures();
-                model.TotalFixtures = stats.Count();
-            }
-            catch (Exception e)
-            {
-                model.Error = e.Message;
-            }
+            var model = _fixtureService.GetFixturesModel("All", "Fixtures");
             return View(model);
         }
 

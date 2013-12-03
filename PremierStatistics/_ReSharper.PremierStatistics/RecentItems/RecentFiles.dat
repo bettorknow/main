@@ -1,40 +1,36 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="CAEA5B68-4E13-43B3-802E-634B05F982DA/f:PremierStatistics.svc" caret="0" fromTop="0" />
-    <File id="11DBEB1A-F140-40F7-8CA8-8CD6B4FDF8B5/f:packages.config" caret="40" fromTop="1" />
-    <File id="11DBEB1A-F140-40F7-8CA8-8CD6B4FDF8B5/f:Fixture.cs" caret="735" fromTop="16" />
-    <File id="A9AE39CC-36E8-4148-8759-8C39D3027059/f:EveryDayOfYear.cs" caret="0" fromTop="0" />
-    <File id="11DBEB1A-F140-40F7-8CA8-8CD6B4FDF8B5/f:App.Config" caret="498" fromTop="3" />
-    <File id="CAEA5B68-4E13-43B3-802E-634B05F982DA/f:packages.config" caret="0" fromTop="0" />
-    <File id="EF8B2C50-88C8-418F-B54C-4F9DB45013A8/d:Interfaces/f:IDateRange.cs" caret="37" fromTop="2" />
-    <File id="11DBEB1A-F140-40F7-8CA8-8CD6B4FDF8B5/f:FoortballStats.Context.cs" caret="0" fromTop="0" />
-    <File id="529F364A-0199-4CD8-BBC2-AB87AF6A6C7F/f:PremierStatisticsTest.cs" caret="3931" fromTop="13" />
     <File id="EF8B2C50-88C8-418F-B54C-4F9DB45013A8/d:Dto/f:TeamDto.cs" caret="372" fromTop="15" />
     <File id="EF8B2C50-88C8-418F-B54C-4F9DB45013A8/d:Dto/f:FixtureDto.cs" caret="303" fromTop="11" />
     <File id="11DBEB1A-F140-40F7-8CA8-8CD6B4FDF8B5/f:IFootballStatsEntities.cs" caret="0" fromTop="0" />
     <File id="EF8B2C50-88C8-418F-B54C-4F9DB45013A8/d:Concrete/f:DateRange.cs" caret="266" fromTop="11" />
     <File id="11DBEB1A-F140-40F7-8CA8-8CD6B4FDF8B5/f:IFixturesService.cs" caret="516" fromTop="15" />
-    <File id="EF8B2C50-88C8-418F-B54C-4F9DB45013A8/d:Service/f:IPremierStatistics.cs" caret="482" fromTop="15" />
     <File id="A9AE39CC-36E8-4148-8759-8C39D3027059/f:FixtureServiceTest.cs" caret="4072" fromTop="11" />
     <File id="CAEA5B68-4E13-43B3-802E-634B05F982DA/d:Maps/f:FixtureToAwayDtoMap.cs" caret="45" fromTop="2" />
     <File id="CAEA5B68-4E13-43B3-802E-634B05F982DA/d:Maps/f:FixtureToHomeDtoMap.cs" caret="49" fromTop="2" />
     <File id="EF8B2C50-88C8-418F-B54C-4F9DB45013A8/d:Interfaces/f:ITeam.cs" caret="212" fromTop="10" />
-    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/f:Web.config" caret="5945" fromTop="11" />
     <File id="11DBEB1A-F140-40F7-8CA8-8CD6B4FDF8B5/f:FixturesService.cs" caret="894" fromTop="23" />
-    <File id="CAEA5B68-4E13-43B3-802E-634B05F982DA/f:DependencyFactory.cs" caret="752" fromTop="28" />
+    <File id="CAEA5B68-4E13-43B3-802E-634B05F982DA/f:Web.config" caret="2212" fromTop="26" />
+    <File id="EF8B2C50-88C8-418F-B54C-4F9DB45013A8/d:Service/f:IPremierStatistics.cs" caret="176" fromTop="5" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:Services/f:IFixtureService.cs" caret="219" fromTop="9" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:Services/f:FixtureService.cs" caret="852" fromTop="28" />
     <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:Models/f:FixtureCountModel.cs" caret="262" fromTop="11" />
-    <File id="CAEA5B68-4E13-43B3-802E-634B05F982DA/f:PremierStatistics.svc.cs" caret="976" fromTop="11" />
-    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:Views/d:Shared/f:_Layout.cshtml" caret="0" fromTop="0" />
-    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:Controllers/f:FixturesController.cs" caret="449" fromTop="17" />
-    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:Views/d:Shared/f:Error.cshtml" caret="0" fromTop="0" />
-    <File id="CAEA5B68-4E13-43B3-802E-634B05F982DA/f:Web.config" caret="669" fromTop="7" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/f:Global.asax.cs" caret="830" fromTop="24" />
+    <File id="CAEA5B68-4E13-43B3-802E-634B05F982DA/f:DependencyFactory.cs" caret="306" fromTop="7" />
+    <File id="CAEA5B68-4E13-43B3-802E-634B05F982DA/f:PremierStatistics.svc.cs" caret="323" fromTop="0" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:Controllers/f:FixturesController.cs" caret="633" fromTop="15" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/f:Web.config" caret="6425" fromTop="24" />
+    <File id="7020124F-9FFC-4AC3-8F3D-AAB8E0240759/f:readme.txt" caret="0" fromTop="0" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/f:Bootstrapper.cs" caret="1466" fromTop="19" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:InterceptionBehaviours/f:IgnoreInvalidCertBehaviour.cs" caret="783" fromTop="25" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/f:FixtureEventSource.cs" caret="585" fromTop="18" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:Views/d:Fixtures/f:Index.cshtml" caret="240" fromTop="10" />
     <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:Views/f:_ViewStart.cshtml" caret="0" fromTop="0" />
-    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:Views/d:Fixtures/f:Index.cshtml" caret="384" fromTop="16" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:Views/d:Shared/f:_Layout.cshtml" caret="0" fromTop="0" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:Views/d:Shared/f:Error.cshtml" caret="0" fromTop="0" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:InterceptionBehaviours/f:LogFixtureRequestBehaviour.cs" caret="495" fromTop="8" />
   </RecentFiles>
   <RecentEdits>
-    <File id="CAEA5B68-4E13-43B3-802E-634B05F982DA/f:PremierStatistics.svc" caret="87" fromTop="0" />
-    <File id="11DBEB1A-F140-40F7-8CA8-8CD6B4FDF8B5/f:GameWeek.cs" caret="162" fromTop="8" />
-    <File id="A9AE39CC-36E8-4148-8759-8C39D3027059/f:EveryDayOfYear.cs" caret="528" fromTop="19" />
     <File id="11DBEB1A-F140-40F7-8CA8-8CD6B4FDF8B5/f:IFootballStatsEntities.cs" caret="288" fromTop="11" />
     <File id="11DBEB1A-F140-40F7-8CA8-8CD6B4FDF8B5/f:packages.config" caret="40" fromTop="1" />
     <File id="11DBEB1A-F140-40F7-8CA8-8CD6B4FDF8B5/f:FoortballStats.Context.tt" caret="1771" fromTop="20" />
@@ -44,7 +40,6 @@
     <File id="EF8B2C50-88C8-418F-B54C-4F9DB45013A8/d:Interfaces/f:ITeam.cs" caret="212" fromTop="10" />
     <File id="CAEA5B68-4E13-43B3-802E-634B05F982DA/d:Maps/f:FixtureToHomeDtoMap.cs" caret="49" fromTop="2" />
     <File id="CAEA5B68-4E13-43B3-802E-634B05F982DA/d:Maps/f:FixtureToAwayDtoMap.cs" caret="45" fromTop="2" />
-    <File id="EF8B2C50-88C8-418F-B54C-4F9DB45013A8/d:Service/f:IPremierStatistics.cs" caret="482" fromTop="15" />
     <File id="11DBEB1A-F140-40F7-8CA8-8CD6B4FDF8B5/f:IFixturesService.cs" caret="516" fromTop="15" />
     <File id="11DBEB1A-F140-40F7-8CA8-8CD6B4FDF8B5/f:FixturesService.cs" caret="102" fromTop="3" />
     <File id="A9AE39CC-36E8-4148-8759-8C39D3027059/f:FixtureServiceTest.cs" caret="4072" fromTop="11" />
@@ -52,11 +47,19 @@
     <File id="EF8B2C50-88C8-418F-B54C-4F9DB45013A8/d:Dto/f:FixtureDto.cs" caret="303" fromTop="11" />
     <File id="529F364A-0199-4CD8-BBC2-AB87AF6A6C7F/f:PremierStatisticsTest.cs" caret="4280" fromTop="20" />
     <File id="11DBEB1A-F140-40F7-8CA8-8CD6B4FDF8B5/f:App.Config" caret="59" fromTop="3" />
-    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/f:Web.config" caret="5945" fromTop="11" />
-    <File id="CAEA5B68-4E13-43B3-802E-634B05F982DA/f:PremierStatistics.svc.cs" caret="976" fromTop="11" />
     <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:Models/f:FixtureCountModel.cs" caret="241" fromTop="10" />
-    <File id="CAEA5B68-4E13-43B3-802E-634B05F982DA/f:Web.config" caret="751" fromTop="7" />
-    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:Controllers/f:FixturesController.cs" caret="449" fromTop="17" />
     <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:Views/d:Fixtures/f:Index.cshtml" caret="172" fromTop="8" />
+    <File id="CAEA5B68-4E13-43B3-802E-634B05F982DA/f:PremierStatistics.svc.cs" caret="323" fromTop="11" />
+    <File id="EF8B2C50-88C8-418F-B54C-4F9DB45013A8/d:Service/f:IPremierStatistics.cs" caret="176" fromTop="5" />
+    <File id="CAEA5B68-4E13-43B3-802E-634B05F982DA/f:Web.config" caret="6274" fromTop="50" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/f:Global.asax.cs" caret="830" fromTop="24" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:Services/f:IFixtureService.cs" caret="219" fromTop="9" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:Services/f:FixtureService.cs" caret="852" fromTop="28" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:InterceptionBehaviours/f:IgnoreInvalidCertBehaviour.cs" caret="420" fromTop="13" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:Controllers/f:FixturesController.cs" caret="633" fromTop="15" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/f:Web.config" caret="6434" fromTop="24" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/f:Bootstrapper.cs" caret="1397" fromTop="24" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/d:InterceptionBehaviours/f:LogFixtureRequestBehaviour.cs" caret="468" fromTop="13" />
+    <File id="87E75E6B-302B-4C85-9B98-3357E2F3A0EE/f:FixtureEventSource.cs" caret="199" fromTop="8" />
   </RecentEdits>
 </RecentFiles>
