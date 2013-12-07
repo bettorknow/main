@@ -1,3 +1,9 @@
 ----------
 EventId : 2, Level : Informational, Message : loading page Fixtures activity=All, Payload : [request : All] [page : Fixtures] , EventName : FixturesStart, Timestamp : 2013-12-03T20:24:06.3668792Z
 
+EventId : 2, Level : Informational, Message : loading page Fixtures activity=All, Payload : [request : All] [page : Fixtures] , EventName : FixturesStart, Timestamp : 2013-12-04T17:27:50.0497858Z
+
+EventId : 2, Level : Informational, Message : loading page Fixtures activity=All, Payload : [request : All] [page : Fixtures] , EventName : FixturesStart, Timestamp : 2013-12-04T17:28:03.6443913Z
+
+EventId : 2, Level : Informational, Message : loading page Fixtures activity=All, Payload : [request : All] [page : Fixtures] , EventName : FixturesStart, Timestamp : 2013-12-04T17:28:25.0503749Z
+

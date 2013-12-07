@@ -9,6 +9,6 @@ namespace BettorKnow.Services
 {
     public interface IFixtureService
     {
-        FixtureCountModel GetFixturesModel(string fixture, string page);
+        FixtureCountModel GetFixturesModel(string fixture);
     }
 }

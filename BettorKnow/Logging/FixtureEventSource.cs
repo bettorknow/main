@@ -12,7 +12,6 @@ namespace BettorKnow
         public class Keywords
         {
             public const EventKeywords Page = (EventKeywords)1;
-            public const EventKeywords DataBase = (EventKeywords)2;
             public const EventKeywords Diagnostic = (EventKeywords)4;
             public const EventKeywords Perf = (EventKeywords)8;
         }
@@ -24,7 +23,7 @@ namespace BettorKnow
 
         public class Tasks
         {
-            public const EventTask Fixtures = (EventTask)1;
+            public const EventTask AllFixtures = (EventTask)1;
         }
 
         [Event(1, Message = "Application Failure: {0}", Level = EventLevel.Critical, Keywords = Keywords.Diagnostic)]
@@ -33,10 +32,10 @@ namespace BettorKnow
             WriteEvent(1, message);
         }
 
-        [Event(2, Message = "loading page {1} activity={0}", Opcode = EventOpcode.Start, Task = Tasks.Fixtures, Keywords = Keywords.Page, Level = EventLevel.Informational)]
-        internal void GetFixtures(string request, string page)
+        [Event(2, Message = "loading page GetFixtures, request={0}", Opcode = EventOpcode.Start, Task = Tasks.AllFixtures, Keywords = Keywords.Page, Level = EventLevel.Informational)]
+        internal void GetFixtures(string request)
         {
-            if (IsEnabled()) WriteEvent(2, request, page);
+            if (IsEnabled()) WriteEvent(2, request);
         }
 
 

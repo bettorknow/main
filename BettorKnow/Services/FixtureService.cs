@@ -14,7 +14,7 @@ namespace BettorKnow.Services
             _premierStatistics = premierStatistics;
         }
 
-        public FixtureCountModel GetFixturesModel(string fixture, string page)
+        public FixtureCountModel GetFixturesModel(string fixture)
         {
             var model = new FixtureCountModel { TotalFixtures = 0, Error = "" };
             try

@@ -21,7 +21,7 @@ namespace BettorKnow.Controllers
 
         public ActionResult Index()
         {
-            var model = _fixtureService.GetFixturesModel("All", "Fixtures");
+            var model = _fixtureService.GetFixturesModel("All");
             return View(model);
         }
 

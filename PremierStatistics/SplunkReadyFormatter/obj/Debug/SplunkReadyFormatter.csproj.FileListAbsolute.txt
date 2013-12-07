@@ -1,0 +1,9 @@
+C:\bettorknow\PremierStatistics\SplunkReadyFormatter\bin\Debug\SplunkReadyFormatter.dll
+C:\bettorknow\PremierStatistics\SplunkReadyFormatter\bin\Debug\SplunkReadyFormatter.pdb
+C:\bettorknow\PremierStatistics\SplunkReadyFormatter\bin\Debug\Microsoft.Practices.EnterpriseLibrary.SemanticLogging.dll
+C:\bettorknow\PremierStatistics\SplunkReadyFormatter\bin\Debug\Newtonsoft.Json.dll
+C:\bettorknow\PremierStatistics\SplunkReadyFormatter\bin\Debug\Microsoft.Practices.EnterpriseLibrary.SemanticLogging.xml
+C:\bettorknow\PremierStatistics\SplunkReadyFormatter\bin\Debug\Newtonsoft.Json.xml
+C:\bettorknow\PremierStatistics\SplunkReadyFormatter\obj\Debug\SplunkReadyFormatter.csprojResolveAssemblyReference.cache
+C:\bettorknow\PremierStatistics\SplunkReadyFormatter\obj\Debug\SplunkReadyFormatter.dll
+C:\bettorknow\PremierStatistics\SplunkReadyFormatter\obj\Debug\SplunkReadyFormatter.pdb

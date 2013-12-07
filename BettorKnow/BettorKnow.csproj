@@ -155,7 +155,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Controllers\FixturesController.cs" />
-    <Compile Include="FixtureEventSource.cs" />
+    <Compile Include="Logging\FixtureEventSource.cs" />
     <Compile Include="InterceptionBehaviours\LogFixtureRequestBehaviour.cs" />
     <Compile Include="Services\FixtureService.cs" />
     <Compile Include="Global.asax.cs">

@@ -6,6 +6,8 @@
   <Module PersistentId="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="EntityFramework" />
   <Module PersistentId="529F364A-0199-4CD8-BBC2-AB87AF6A6C7F" ModuleId="PremierStatistics.Tests" />
   <Module PersistentId="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77" ModuleId="nunit.framework" />
-  <Module PersistentId="F73CBD5E-6851-4F20-A7CD-A5E0519B2980" ModuleId="BettorKnow" />
   <Module PersistentId="87E75E6B-302B-4C85-9B98-3357E2F3A0EE" ModuleId="BettorKnow_1" />
+  <Module PersistentId="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib" />
+  <Module PersistentId="9F825F18-E97E-4A9F-B485-D4E1E0D05D5B" ModuleId="SplunkReadyFormatter" />
+  <Module PersistentId="Microsoft.Practices.EnterpriseLibrary.SemanticLogging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" ModuleId="Microsoft.Practices.EnterpriseLibrary.SemanticLogging" />
 </Modules>

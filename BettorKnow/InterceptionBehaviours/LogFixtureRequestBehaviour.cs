@@ -11,7 +11,7 @@ namespace BettorKnow.InterceptionBehaviours
     {
         public IMethodReturn Invoke(IMethodInvocation input, GetNextInterceptionBehaviorDelegate getNext)
         {
-            FixtureEventSource.Log.GetFixtures(input.Arguments["fixture"].ToString(), input.Arguments["page"].ToString());
+            FixtureEventSource.Log.GetFixtures(input.Arguments["fixture"].ToString());
             return getNext()(input, getNext);
         }
 

@@ -7,12 +7,24 @@
   <traceEventService/>
 
   <sinks>
-    <flatFileSink name="svcRuntime" fileName="SemanticETWLogs.log" >
+    <rollingFlatFileSink name="RollingFlatFileSink" 
+                         fileName="BettorKnow-Web-Fixtures.log" 
+                         timeStampPattern="yyyy" 
+                         rollFileExistsBehavior="Overwrite" 
+                         rollInterval="Day">
       <sources>
-        <eventSource name="BettorKnow-Web-Fixtures" level="Informational"/>
+        <eventSource name="BettorKnow-Web-Fixtures"
+                     level="Informational"/>
       </sources>
-      <eventTextFormatter header="----------"/>
-    </flatFileSink>    
+      <customEventTextFormatter type="SplunkReadyFormatter.SplunkReadyFormatter, SplunkReadyFormatter">
+   	   <parameters>
+        	<parameter name="prefix" type="System.String" value=""/>
+	        <parameter name="dateTimeFormat" type="System.String" value="O"/>
+        </parameters>
+      </customEventTextFormatter>
+
+    </rollingFlatFileSink>
+  
   </sinks>
 
 
